@@ -1,852 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-MKGJNYHXMK"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-			gtag("config", "G-MKGJNYHXMK");
-		</script>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKGJNYHXMK"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MKGJNYHXMK');</script>
+    <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1391250095915107');fbq('track','PageView');</script>
 
-		<script>
-			!(function (f, b, e, v, n, t, s) {
-				if (f.fbq) return;
-				n = f.fbq = function () {
-					n.callMethod
-						? n.callMethod.apply(n, arguments)
-						: n.queue.push(arguments);
-				};
-				if (!f._fbq) f._fbq = n;
-				n.push = n;
-				n.loaded = !0;
-				n.version = "2.0";
-				n.queue = [];
-				t = b.createElement(e);
-				t.async = !0;
-				t.src = v;
-				s = b.getElementsByTagName(e)[0];
-				s.parentNode.insertBefore(t, s);
-			})(
-				window,
-				document,
-				"script",
-				"https://connect.facebook.net/en_US/fbevents.js"
-			);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Richard Automotive | Inventario Premium</title>
 
-			fbq("init", "1391250095915107");
-			fbq("track", "PageView");
-		</script>
-		<noscript
-			><img
-				height="1"
-				width="1"
-				style="display: none"
-				src="https://www.facebook.com/tr?id=1391250095915107&ev=PageView&noscript=1"
-		/></noscript>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Richard Auto">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/ryZDJfy7/IMG-8290.png">
 
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
-		<meta name="theme-color" content="#002c5f" />
-
-		<meta name="robots" content="index, follow" />
-		<meta name="author" content="Richard Automotive" />
-		<meta
-			name="description"
-			content="Inventario oficial de Hyundai en Puerto Rico. Pagos bajos, aprobación rápida y entrega inmediata."
-		/>
-
-		<meta
-			property="og:title"
-			content="Richard Automotive | Inventario Premium"
-		/>
-		<meta
-			property="og:description"
-			content="Calcula tu pago mensual al instante. Ver inventario disponible."
-		/>
-		<meta
-			property="og:image"
-			content="https://i.postimg.cc/ryZDJfy7/IMG-8290.png"
-		/>
-		<meta
-			property="og:url"
-			content="https://richardautomotive.tiiny.site"
-		/>
-		<meta property="og:type" content="website" />
-
-		<link
-			rel="icon"
-			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
-			rel="stylesheet"
-		/>
-
-		<title>Richard Automotive | Inventario Premium</title>
-
-		<style>
-			:root {
-				--primary: #002c5f;
-				--bg: #f8f9fa;
-				--text: #111;
-				--white: #fff;
-				--whatsapp: #25d366;
-				--call: #34495e;
-				--radius: 16px;
-				--shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-				--badge-color: #ff3b30;
-			}
-
-			* {
-				box-sizing: border-box;
-				-webkit-tap-highlight-color: transparent;
-			}
-			body {
-				font-family: "Montserrat", sans-serif;
-				margin: 0;
-				padding-bottom: 90px;
-				background: var(--bg);
-				color: var(--text);
-			}
-
-			header {
-				background: linear-gradient(
-					160deg,
-					var(--primary) 0%,
-					#000b1a 100%
-				);
-				color: var(--white);
-				padding: 40px 20px 30px;
-				border-bottom-left-radius: 30px;
-				border-bottom-right-radius: 30px;
-				box-shadow: 0 10px 30px rgba(0, 44, 95, 0.3);
-				text-align: center;
-			}
-			.brand-name {
-				font-size: 0.9rem;
-				font-weight: 800;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-				opacity: 0.8;
-				display: block;
-				margin-bottom: 5px;
-			}
-			.hero-title {
-				font-size: 1.8rem;
-				font-weight: 800;
-				margin-bottom: 20px;
-				line-height: 1.1;
-			}
-
-			.search-container {
-				position: relative;
-				max-width: 500px;
-				margin: 20px auto 0;
-			}
-			.search-input {
-				width: 100%;
-				padding: 16px 20px 16px 50px;
-				border: none;
-				border-radius: 50px;
-				font-size: 1rem;
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-			}
-			.search-input:focus {
-				outline: none;
-				transform: scale(1.01);
-			}
-			.search-icon {
-				position: absolute;
-				left: 18px;
-				top: 50%;
-				transform: translateY(-50%);
-				color: #888;
-			}
-
-			.filters-container {
-				display: flex;
-				gap: 10px;
-				overflow-x: auto;
-				padding: 25px 20px 10px;
-				scrollbar-width: none;
-			}
-			.filter-pill {
-				flex: 0 0 auto;
-				padding: 8px 16px;
-				background: var(--white);
-				border: 1px solid #eee;
-				border-radius: 30px;
-				font-weight: 600;
-				font-size: 0.85rem;
-				color: #555;
-				transition: all 0.2s;
-				cursor: pointer;
-			}
-			.filter-pill.active {
-				background: var(--primary);
-				color: var(--white);
-				border-color: var(--primary);
-			}
-
-			.inventory-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-				gap: 15px;
-				padding: 20px;
-			}
-			.car-card {
-				background: var(--white);
-				border-radius: var(--radius);
-				overflow: hidden;
-				box-shadow: var(--shadow);
-				position: relative;
-				transition: transform 0.2s;
-				display: flex;
-				flex-direction: column;
-				cursor: pointer;
-			}
-
-			.card-badge {
-				position: absolute;
-				top: 12px;
-				left: 12px;
-				background: var(--badge-color);
-				color: white;
-				padding: 5px 12px;
-				border-radius: 20px;
-				font-size: 0.7rem;
-				font-weight: 800;
-				z-index: 10;
-				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-			}
-
-			.card-img-wrapper {
-				height: 140px;
-				background: #eee;
-				position: relative;
-			}
-			.card-img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			.card-details {
-				padding: 15px;
-				text-align: center;
-			}
-			.card-title {
-				font-weight: 800;
-				font-size: 1.1rem;
-				margin-bottom: 5px;
-				color: var(--primary);
-			}
-			.card-price {
-				font-size: 1.6rem;
-				font-weight: 800;
-				color: var(--text);
-			}
-			.card-price small {
-				font-size: 0.7rem;
-				color: #888;
-				font-weight: 600;
-			}
-			.btn-card-view {
-				margin-top: 10px;
-				padding: 10px;
-				width: 100%;
-				background: #edf2f7;
-				color: var(--primary);
-				border: none;
-				border-radius: 8px;
-				font-weight: 700;
-				font-size: 0.8rem;
-				pointer-events: none;
-			}
-
-			.sticky-bar {
-				position: fixed;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				background: rgba(255, 255, 255, 0.95);
-				backdrop-filter: blur(10px);
-				border-top: 1px solid #eee;
-				padding: 10px 20px 25px;
-				display: flex;
-				gap: 15px;
-				z-index: 1000;
-				box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
-			}
-			.action-btn {
-				flex: 1;
-				padding: 12px;
-				border-radius: 12px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				gap: 8px;
-				font-weight: 700;
-				text-decoration: none;
-				font-size: 0.9rem;
-				color: white;
-			}
-			.btn-call {
-				background: var(--call);
-			}
-			.btn-wa {
-				background: var(--whatsapp);
-			}
-
-			.modal-overlay {
-				display: none;
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(0, 0, 0, 0.6);
-				backdrop-filter: blur(5px);
-				z-index: 2000;
-				align-items: flex-end;
-			}
-			.modal-overlay.is-open {
-				display: flex;
-				animation: fadeIn 0.3s;
-			}
-			.modal-container {
-				background: #fff;
-				width: 100%;
-				max-width: 600px;
-				margin: 0 auto;
-				border-radius: 25px 25px 0 0;
-				overflow: hidden;
-				max-height: 95vh;
-				overflow-y: auto;
-				position: relative;
-				animation: slideUp 0.3s;
-			}
-			@keyframes slideUp {
-				from {
-					transform: translateY(100%);
-				}
-				to {
-					transform: translateY(0);
-				}
-			}
-			@keyframes fadeIn {
-				from {
-					opacity: 0;
-				}
-				to {
-					opacity: 1;
-				}
-			}
-
-			.modal-header {
-				height: 250px;
-				background: #eee;
-				position: relative;
-			}
-			.modal-img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			.modal-close-btn {
-				position: absolute;
-				top: 15px;
-				right: 15px;
-				width: 35px;
-				height: 35px;
-				background: rgba(0, 0, 0, 0.5);
-				color: white;
-				border-radius: 50%;
-				border: none;
-				font-size: 20px;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				z-index: 20;
-			}
-			.modal-body {
-				padding: 25px;
-			}
-			.modal-title {
-				margin: 0 0 20px;
-				font-size: 2rem;
-				color: var(--primary);
-			}
-
-			.specs-grid {
-				background: #f8f9fa;
-				border-radius: 12px;
-				padding: 15px;
-				margin-bottom: 20px;
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				gap: 10px;
-				text-align: center;
-			}
-			.spec-value {
-				font-weight: 800;
-				color: var(--primary);
-				display: block;
-			}
-			.spec-label {
-				font-size: 0.7rem;
-				color: #666;
-			}
-
-			.calculator-area {
-				border: 2px solid #eee;
-				border-radius: 16px;
-				padding: 20px;
-				margin-bottom: 25px;
-			}
-			.pronto-toggles {
-				display: flex;
-				background: #eee;
-				padding: 4px;
-				border-radius: 10px;
-				margin-bottom: 20px;
-			}
-			.pronto-opt {
-				flex: 1;
-				padding: 8px;
-				text-align: center;
-				font-size: 0.85rem;
-				font-weight: 600;
-				border-radius: 8px;
-				cursor: pointer;
-				color: #666;
-			}
-			.pronto-opt.active {
-				background: var(--white);
-				color: var(--primary);
-				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-			}
-			.payment-display {
-				font-size: 3.5rem;
-				font-weight: 900;
-				text-align: center;
-				color: var(--primary);
-				margin: 10px 0;
-				letter-spacing: -2px;
-			}
-			.payment-display small {
-				font-size: 1rem;
-				color: #888;
-			}
-			.input-std {
-				width: 100%;
-				padding: 16px;
-				background: #f8f9fa;
-				border: 1px solid #ddd;
-				border-radius: 12px;
-				margin-bottom: 12px;
-			}
-			.btn-submit-wa {
-				width: 100%;
-				padding: 18px;
-				background: var(--primary);
-				color: white;
-				border: none;
-				border-radius: 12px;
-				font-weight: 800;
-				cursor: pointer;
-				box-shadow: 0 5px 15px rgba(0, 44, 95, 0.3);
-			}
-
-			@media (min-width: 600px) {
-				.inventory-grid {
-					display: flex;
-					overflow-x: auto;
-					padding-bottom: 40px;
-				}
-				.car-card {
-					flex: 0 0 280px;
-				}
-				header {
-					text-align: center;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<span class="brand-name">Richard Automotive</span>
-			<div class="hero-title">Encuentra tu Hyundai Ideal.</div>
-			<div class="search-container">
-				<span class="search-icon">🔍</span>
-				<input
-					type="text"
-					id="searchInput"
-					class="search-input"
-					placeholder="Buscar modelo..."
-				/>
-			</div>
-		</header>
-
-		<div class="filters-container">
-			<div class="filter-pill active" data-filter="all">Todos</div>
-			<div class="filter-pill" data-filter="suv">SUVs</div>
-			<div class="filter-pill" data-filter="sedan">Sedanes</div>
-			<div class="filter-pill" data-filter="economico">Económicos</div>
-		</div>
-
-		<div class="inventory-grid" id="grid"></div>
-
-		<div class="sticky-bar">
-			<a
-				href="tel:17873682880"
-				class="action-btn btn-call"
-				onclick="trackClick('Call')"
-				>📞 Llamar</a
-			>
-			<a
-				href="https://wa.me/17873682880"
-				class="action-btn btn-wa"
-				onclick="trackClick('WhatsAppSticky')"
-				>💬 WhatsApp</a
-			>
-		</div>
-
-		<div id="modal" class="modal-overlay">
-			<div class="modal-container">
-				<div class="modal-header">
-					<button class="modal-close-btn" id="closeModalBtn">
-						✕
-					</button>
-					<img id="mImg" class="modal-img" src="" alt="Carro" />
-				</div>
-				<div class="modal-body">
-					<h2 id="mTitle" class="modal-title">Modelo</h2>
-					<div class="specs-grid">
-						<div class="spec-cell">
-							<span class="spec-value" id="specEngine">-</span
-							><span class="spec-label">Motor</span>
-						</div>
-						<div class="spec-cell">
-							<span class="spec-value" id="specMpg">-</span
-							><span class="spec-label">MPG</span>
-						</div>
-						<div class="spec-cell">
-							<span class="spec-value">10/100k</span
-							><span class="spec-label">Garantía</span>
-						</div>
-					</div>
-					<div class="calculator-area">
-						<p
-							style="
-								text-align: center;
-								font-weight: 700;
-								color: #888;
-								margin-bottom: 10px;
-								text-transform: uppercase;
-								font-size: 0.8rem;
-							"
-						>
-							Simulador de Pago (84 Meses)
-						</p>
-						<div class="pronto-toggles" id="prontoOptions">
-							<div class="pronto-opt active" data-value="0">
-								$0 Pronto
-							</div>
-							<div class="pronto-opt" data-value="1500">
-								$1.5k
-							</div>
-							<div class="pronto-opt" data-value="3000">$3k</div>
-						</div>
-						<div class="payment-display" id="mPayment">
-							$0<small>/mes</small>
-						</div>
-					</div>
-					<form id="leadForm">
-						<input
-							type="text"
-							id="cName"
-							class="input-std"
-							placeholder="Tu Nombre Completo"
-							required
-						/>
-						<button type="submit" class="btn-submit-wa">
-							SOLICITAR OFERTA ➔
-						</button>
-					</form>
-					<p
-						style="
-							text-align: center;
-							font-size: 0.7rem;
-							color: #999;
-							margin-top: 15px;
-						"
-					>
-						*Pagos estimados a 84 meses. Sujeto a aprobación.
-					</p>
-					<br /><br />
-				</div>
-			</div>
-		</div>
-
-		<script>
-			const CONFIG = {
-				whatsappPhone: "17873682880",
-				termMonths: 84,
-				interestRate: 0.0545,
-			};
-			const INVENTORY = [
-				{
-					id: "tucson",
-					name: "Tucson",
-					price: 31995,
-					type: "suv",
-					engine: "2.5L 4Cyl",
-					mpg: "29",
-					img: "https://i.postimg.cc/ryZDJfy7/IMG-8290.png",
-					badge: "Bono $2k",
-				},
-				{
-					id: "kona",
-					name: "Kona",
-					price: 27995,
-					type: "suv",
-					engine: "2.0L 4Cyl",
-					mpg: "32",
-					img: "https://i.postimg.cc/MKkm5ZGv/IMG-8292.webp",
-					badge: "",
-				},
-				{
-					id: "santacruz",
-					name: "Santa Cruz",
-					price: 34995,
-					type: "suv",
-					engine: "2.5L Turbo",
-					mpg: "25",
-					img: "https://i.postimg.cc/prK848L4/IMG-8293.png",
-					badge: "Liquidación",
-				},
-				{
-					id: "venue",
-					name: "Venue",
-					price: 23995,
-					type: "economico",
-					engine: "1.6L 4Cyl",
-					mpg: "33",
-					img: "https://i.postimg.cc/zBgRHWKx/IMG-8296.png",
-					badge: "Económica",
-				},
-				{
-					id: "elantra",
-					name: "Elantra",
-					price: 25995,
-					type: "sedan",
-					engine: "2.0L 4Cyl",
-					mpg: "37",
-					img: "https://i.postimg.cc/vT7g3sP9/IMG-8294.png",
-					badge: "MPG Líder",
-				},
-				{
-					id: "santafe",
-					name: "Santa Fe",
-					price: 41500,
-					type: "suv",
-					engine: "2.5L Turbo",
-					mpg: "26",
-					img: "https://i.postimg.cc/jSxN3DYR/IMG-8295.jpg",
-					badge: "Nueva 2026",
-				},
-				{
-					id: "palisade",
-					name: "Palisade",
-					price: 48995,
-					type: "suv",
-					engine: "3.8L V6",
-					mpg: "22",
-					img: "https://i.postimg.cc/t4v1rDzw/IMG-8297.png",
-					badge: "Familiar",
-				},
-				{
-					id: "sonata",
-					name: "Sonata",
-					price: 28995,
-					type: "sedan",
-					engine: "2.5L 4Cyl",
-					mpg: "32",
-					img: "https://i.postimg.cc/bJkswPfg/IMG-8298.png",
-					badge: "Lujo",
-				},
-			];
-
-			let state = { currentCar: null, currentPronto: 0 };
-			const dom = {
-				grid: document.getElementById("grid"),
-				modal: document.getElementById("modal"),
-				search: document.getElementById("searchInput"),
-				filters: document.querySelectorAll(".filter-pill"),
-				closeModalBtn: document.getElementById("closeModalBtn"),
-				leadForm: document.getElementById("leadForm"),
-				prontoOptions: document.querySelectorAll(".pronto-opt"),
-				mTitle: document.getElementById("mTitle"),
-				mImg: document.getElementById("mImg"),
-				specEngine: document.getElementById("specEngine"),
-				specMpg: document.getElementById("specMpg"),
-				mPayment: document.getElementById("mPayment"),
-				cName: document.getElementById("cName"),
-			};
-
-			function init() {
-				renderGrid(INVENTORY);
-				setupEventListeners();
-			}
-			function calculatePayment(price, down) {
-				const r = CONFIG.interestRate / 12;
-				const n = CONFIG.termMonths;
-				const p = price - down;
-				if (p <= 0) return 0;
-				return Math.round(
-					(p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)
-				);
-			}
-
-			function renderGrid(list) {
-				dom.grid.innerHTML = "";
-				list.forEach((car) => {
-					const pay = calculatePayment(car.price, 0);
-					const badge = car.badge
-						? `<div class="card-badge">${car.badge}</div>`
-						: "";
-					const card = document.createElement("div");
-					card.className = "car-card";
-					card.onclick = () => openModal(car.id);
-					card.innerHTML = `${badge}<div class="card-img-wrapper"><img src="${car.img}" class="card-img" loading="lazy"></div><div class="card-details"><div class="card-title">${car.name}</div><div class="card-price">$${pay}<small>/mes</small></div><button class="btn-card-view">Ver Detalles</button></div>`;
-					dom.grid.appendChild(card);
-				});
-			}
-
-			function openModal(id) {
-				state.currentCar = INVENTORY.find((c) => c.id === id);
-				dom.mTitle.innerText = "Hyundai " + state.currentCar.name;
-				dom.mImg.src = state.currentCar.img;
-				dom.specEngine.innerText = state.currentCar.engine;
-				dom.specMpg.innerText = state.currentCar.mpg;
-				updateProntoSelection(0);
-				dom.modal.classList.add("is-open");
-				document.body.style.overflow = "hidden";
-
-				if (typeof fbq !== "undefined")
-					fbq("track", "ViewContent", {
-						content_name: state.currentCar.name,
-						value: state.currentCar.price,
-						currency: "USD",
-					});
-				if (typeof gtag !== "undefined")
-					gtag("event", "view_item", {
-						items: [
-							{
-								item_name: state.currentCar.name,
-								price: state.currentCar.price,
-							},
-						],
-					});
-			}
-
-			function closeModal() {
-				dom.modal.classList.remove("is-open");
-				document.body.style.overflow = "auto";
-			}
-
-			function updateProntoSelection(amt) {
-				state.currentPronto = amt;
-				dom.prontoOptions.forEach((opt) =>
-					opt.classList.toggle(
-						"active",
-						parseInt(opt.dataset.value) === amt
-					)
-				);
-				const pay = calculatePayment(state.currentCar.price, amt);
-				dom.mPayment.innerHTML = `$${pay}<small>/mes</small>`;
-			}
-
-			function trackClick(type) {
-				if (typeof fbq !== "undefined")
-					fbq("track", "Contact", { content_name: type });
-				if (typeof gtag !== "undefined")
-					gtag("event", "contact", { method: type });
-			}
-
-			function setupEventListeners() {
-				dom.search.addEventListener("input", (e) => {
-					const term = e.target.value.toLowerCase();
-					renderGrid(
-						INVENTORY.filter(
-							(c) =>
-								c.name.toLowerCase().includes(term) ||
-								(c.badge &&
-									c.badge.toLowerCase().includes(term))
-						)
-					);
-				});
-				dom.filters.forEach((pill) => {
-					pill.addEventListener("click", (e) => {
-						dom.filters.forEach((p) =>
-							p.classList.remove("active")
-						);
-						e.target.classList.add("active");
-						const type = e.target.dataset.filter;
-						renderGrid(
-							type === "all"
-								? INVENTORY
-								: INVENTORY.filter((c) => c.type === type)
-						);
-					});
-				});
-				dom.closeModalBtn.addEventListener("click", closeModal);
-				dom.modal.addEventListener("click", (e) => {
-					if (e.target === dom.modal) closeModal();
-				});
-				dom.prontoOptions.forEach((opt) =>
-					opt.addEventListener("click", () =>
-						updateProntoSelection(parseInt(opt.dataset.value))
-					)
-				);
-
-				dom.leadForm.addEventListener("submit", (e) => {
-					e.preventDefault();
-					const name = dom.cName.value;
-					const pay = dom.mPayment.innerText.split("/")[0];
-					const text = `Hola Richard, soy *${name}*. Me interesa el *Hyundai ${state.currentCar.name}*. Vi el pago estimado de *${pay}* con $${state.currentPronto} de pronto.`;
-					window.open(
-						`https://wa.me/${
-							CONFIG.whatsappPhone
-						}?text=${encodeURIComponent(text)}`,
-						"_blank"
-					);
-
-					if (typeof fbq !== "undefined")
-						fbq("track", "Lead", {
-							content_name: state.currentCar.name,
-						});
-					if (typeof gtag !== "undefined")
-						gtag("event", "generate_lead", {
-							item_name: state.currentCar.name,
-						});
-
-					closeModal();
-				});
-			}
-			document.addEventListener("DOMContentLoaded", init);
-		</script>
-	</body>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root{--primary:#002c5f;--bg:#f8f9fa;--text:#111;--white:#fff;--whatsapp:#25D366;--call:#34495e;--badge:#ff3b30}
+        body{font-family:'Montserrat',sans-serif;margin:0;padding-bottom:90px;background:var(--bg)}
+        header{background:linear-gradient(160deg,var(--primary),#000b1a);color:#fff;padding:40px 20px;text-align:center;border-radius:0 0 30px 30px}
+        .hero-title{font-size:1.8rem;font-weight:800}
+        .search-input{width:100%;max-width:500px;padding:15px;border-radius:50px;border:none;margin-top:20px}
+        .inventory-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:15px;padding:20px}
+        .car-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.1);position:relative;cursor:pointer}
+        .card-badge{position:absolute;top:10px;left:10px;background:var(--badge);color:#fff;padding:5px 10px;border-radius:20px;font-size:0.7rem;font-weight:800;z-index:10}
+        .card-img{width:100%;height:140px;object-fit:cover}
+        .card-details{padding:15px;text-align:center}
+        .card-price{font-size:1.4rem;font-weight:800;color:var(--primary)}
+        .sticky-bar{position:fixed;bottom:0;width:100%;background:#fff;padding:15px;display:flex;gap:10px;box-shadow:0 -5px 10px rgba(0,0,0,0.05);z-index:100}
+        .action-btn{flex:1;padding:12px;border-radius:12px;text-align:center;text-decoration:none;font-weight:800;color:#fff}
+        .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:200;align-items:flex-end}
+        .modal-overlay.is-open{display:flex}
+        .modal-content{background:#fff;width:100%;max-width:600px;margin:0 auto;border-radius:25px 25px 0 0;padding:25px;max-height:90vh;overflow-y:auto}
+        .payment-display{font-size:3rem;font-weight:900;text-align:center;color:var(--primary);margin:20px 0}
+        .pronto-toggles{display:flex;background:#eee;padding:5px;border-radius:12px;margin-bottom:20px}
+        .pronto-opt{flex:1;text-align:center;padding:10px;cursor:pointer;border-radius:10px;font-weight:700}
+        .pronto-opt.active{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+        .btn-submit{width:100%;padding:18px;background:var(--primary);color:#fff;border:none;border-radius:12px;font-weight:800;font-size:1.1rem}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-title">Richard Automotive</div>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar modelo...">
+    </header>
+    <div class="inventory-grid" id="grid"></div>
+    <div class="sticky-bar">
+        <a href="tel:17873682880" style="background:var(--call)" class="action-btn">📞 Llamar</a>
+        <a href="https://wa.me/17873682880" style="background:var(--whatsapp)" class="action-btn">💬 WhatsApp</a>
+    </div>
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="mTitle"></h2>
+            <img id="mImg" style="width:100%;border-radius:12px">
+            <div class="payment-display" id="mPayment"></div>
+            <div class="pronto-toggles" id="prontoOptions">
+                <div class="pronto-opt active" data-value="0">$0 Pronto</div>
+                <div class="pronto-opt" data-value="1500">$1.5k</div>
+                <div class="pronto-opt" data-value="3000">$3k</div>
+            </div>
+            <input type="text" id="cName" style="width:100%;padding:15px;margin-bottom:15px;border-radius:10px;border:1px solid #ccc" placeholder="Tu Nombre">
+            <button id="sendLead" class="btn-submit">SOLICITAR OFERTA</button>
+            <button onclick="closeModal()" style="width:100%;background:none;border:none;color:#888;margin-top:15px">Cerrar</button>
+        </div>
+    </div>
+    <script>
+        const INVENTORY=[
+            {id:'tucson',name:'Tucson',price:31995,img:'https://i.postimg.cc/ryZDJfy7/IMG-8290.png',badge:'Bono $2k'},
+            {id:'kona',name:'Kona',price:27995,img:'https://i.postimg.cc/MKkm5ZGv/IMG-8292.webp',badge:''},
+            {id:'santacruz',name:'Santa Cruz',price:34995,img:'https://i.postimg.cc/prK848L4/IMG-8293.png',badge:'Liquidación'},
+            {id:'venue',name:'Venue',price:23995,img:'https://i.postimg.cc/zBgRHWKx/IMG-8296.png',badge:'Económica'},
+            {id:'elantra',name:'Elantra',price:25995,img:'https://i.postimg.cc/vT7g3sP9/IMG-8294.png',badge:'MPG Líder'},
+            {id:'santafe',name:'Santa Fe',price:41500,img:'https://i.postimg.cc/jSxN3DYR/IMG-8295.jpg',badge:'Nueva 2026'},
+            {id:'palisade',name:'Palisade',price:48995,img:'https://i.postimg.cc/t4v1rDzw/IMG-8297.png',badge:'Familiar'},
+            {id:'sonata',name:'Sonata',price:28995,img:'https://i.postimg.cc/bJkswPfg/IMG-8298.png',badge:'Lujo'}
+        ];
+        let currentCar=null,currentPronto=0;
+        function calc(p,d){const r=0.0545/12,n=84;const pr=p-d;return Math.round((pr*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1));}
+        function render(list){
+            const g=document.getElementById('grid');g.innerHTML='';
+            list.forEach(c=>{
+                const card=document.createElement('div');card.className='car-card';
+                card.onclick=()=>openModal(c);
+                card.innerHTML=`${c.badge?`<div class="card-badge">${c.badge}</div>`:''}<img src="${c.img}" class="card-img"><div class="card-details"><b>${c.name}</b><div class="card-price">$${calc(c.price,0)}<small>/mes</small></div></div>`;
+                g.appendChild(card);
+            });
+        }
+        function openModal(c){
+            currentCar=c;document.getElementById('mTitle').innerText=c.name;
+            document.getElementById('mImg').src=c.img;updatePay(0);
+            document.getElementById('modal').classList.add('is-open');
+            if(typeof fbq !== 'undefined') fbq('track','ViewContent',{content_name:c.name});
+        }
+        function closeModal(){document.getElementById('modal').classList.remove('is-open');}
+        function updatePay(v){currentPronto=v;document.getElementById('mPayment').innerText=`$${calc(currentCar.price,v)}/mes`;}
+        document.getElementById('prontoOptions').onclick=(e)=>{
+            if(e.target.dataset.value){
+                document.querySelectorAll('.pronto-opt').forEach(o=>o.classList.remove('active'));
+                e.target.classList.add('active');updatePay(parseInt(e.target.dataset.value));
+            }
+        }
+        document.getElementById('sendLead').onclick=()=>{
+            const n=document.getElementById('cName').value;
+            const t=`Hola Richard, soy ${n}. Me interesa el ${currentCar.name}.`;
+            if(typeof fbq !== 'undefined') fbq('track','Lead',{content_name:currentCar.name});
+            window.open(`https://wa.me/17873682880?text=${encodeURIComponent(t)}`);
+        }
+        render(INVENTORY);
+    </script>
+</body>
 </html>
