@@ -1,0 +1,21 @@
+{
+    "name": "Richard Automotive",
+    "short_name": "Richard Auto",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#f0f2f5",
+    "theme_color": "#002c5f",
+    "description": "Inventario Premium y Financiamiento en Puerto Rico",
+    "icons": [
+        {
+            "src": "https://i.postimg.cc/ryZDJfy7/IMG-8290.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://i.postimg.cc/ryZDJfy7/IMG-8290.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

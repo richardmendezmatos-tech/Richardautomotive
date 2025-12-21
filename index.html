@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Tag Manager / Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKGJNYHXMK"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-MKGJNYHXMK');</script>
+
+    <!-- Facebook Pixel -->
+    <script>!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '1391250095915107'); fbq('track', 'PageView');</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO Meta Tags -->
+    <title>Richard Automotive | Inventario Premium de Autos en Puerto Rico</title>
+    <meta name="description"
+        content="Encuentra tu próximo auto en Richard Automotive. Inventario premium de Hyundai Tucson, Kona, Venue y más. Financiamiento disponible y ofertas desde $0 pronto en Puerto Rico.">
+    <meta name="keywords"
+        content="Richard Automotive, venta de autos Puerto Rico, Hyundai Puerto Rico, Tucson, Kona, Santa Cruz, financiamiento de autos, dealer de autos, inventario premium">
+    <meta name="author" content="Richard Automotive">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#002c5f">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://richardautomotive.com/">
+    <meta property="og:title" content="Richard Automotive | Inventario Premium y Financiamiento">
+    <meta property="og:description"
+        content="Ofertas exclusivas en Hyundai y autos usados. Aprobación rápida, bonos y pagos bajos. ¡Contáctanos hoy!">
+    <meta property="og:image" content="https://i.postimg.cc/ryZDJfy7/IMG-8290.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Richard Automotive | Inventario Premium">
+    <meta property="twitter:description"
+        content="Encuentra el auto de tus sueños con las mejores ofertas en Puerto Rico.">
+    <meta property="twitter:image" content="https://i.postimg.cc/ryZDJfy7/IMG-8290.png">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://richardautomotive.com/">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Richard Auto">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/ryZDJfy7/IMG-8290.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoDealer",
+      "name": "Richard Automotive",
+      "image": "https://i.postimg.cc/ryZDJfy7/IMG-8290.png",
+      "url": "https://richardautomotive.com/",
+      "telephone": "+17873682880",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Puerto Rico",
+        "addressCountry": "PR"
+      },
+      "priceRange": "$$",
+      "description": "Venta de autos nuevos y usados e inventario premium en Puerto Rico."
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #002c5f;
+            --accent: #0066cc;
+            --bg: #f0f2f5;
+            --text: #1a1a1a;
+            --white: #ffffff;
+            --whatsapp: #25D366;
+            --call: #34495e;
+            --badge: #ff3b30;
+            --surface: rgba(255, 255, 255, 0.85)
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding-bottom: 120px;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased
+        }
+
+        /* Premium Hero Section */
+        header {
+            background: linear-gradient(135deg, rgba(0, 44, 95, 0.95), rgba(0, 11, 26, 0.98)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1000&auto=format&fit=crop');
+            /* Placeholder bg */
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 60px 20px 80px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 15px 40px rgba(0, 44, 95, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1.hero-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            margin: 0 0 10px 0;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3)
+        }
+
+        h2.hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 500;
+            margin: 0;
+            letter-spacing: 0.5px
+        }
+
+        /* Modern Search & Filters */
+        .search-container {
+            margin-top: 30px;
+            position: relative;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 10
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            outline: none;
+            font-family: inherit;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .search-input:focus {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-filters {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            backdrop-filter: blur(5px);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Grid & Cards */
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 25px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 20;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Glassmorphism Card */
+        .car-card {
+            background: var(--surface);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            /* Softer shadow */
+            cursor: pointer;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .car-card:active {
+            transform: scale(0.96)
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+            z-index: 50;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            left: auto;
+            background: var(--badge);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(255, 59, 48, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-details {
+            padding: 22px;
+            text-align: left
+        }
+
+        .card-name {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin: 0 0 5px 0;
+            color: var(--text);
+            letter-spacing: -0.5px;
+        }
+
+        .card-price {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+        }
+
+        .card-price small {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #666;
+        }
+
+        /* Sticky Bar */
+        .sticky-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 18px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            color: #fff;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: transform 0.2s;
+        }
+
+        .action-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 200;
+            align-items: flex-end;
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal-overlay.is-open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--white);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 40px 40px 0 0;
+            padding: 35px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-sizing: border-box;
+            box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.2);
+            animation: slideUp 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%)
+            }
+
+            to {
+                transform: translateY(0)
+            }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin: 0;
+            color: var(--primary);
+            letter-spacing: -1px;
+        }
+
+        .payment-display {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6efff 100%);
+            padding: 25px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 25px 0;
+            border: 1px solid #dceeff;
+        }
+
+        .payment-amount {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .payment-label {
+            font-size: 0.9rem;
+            color: #557;
+            margin-top: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .filter-section {
+            margin-bottom: 25px
+        }
+
+        .filter-label {
+            font-weight: 800;
+            margin-bottom: 12px;
+            display: block;
+            color: #333;
+            font-size: 0.95rem
+        }
+
+        .pronto-toggles {
+            display: flex;
+            background: #f0f2f5;
+            padding: 6px;
+            border-radius: 18px;
+            gap: 5px;
+        }
+
+        .pronto-opt {
+            flex: 1;
+            text-align: center;
+            padding: 14px;
+            cursor: pointer;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            color: #666;
+        }
+
+        .pronto-opt.active {
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            color: var(--primary);
+            transform: scale(1.02);
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 18px;
+            border-radius: 18px;
+            border: 2px solid #edf2f7;
+            background: #f8fafc;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            -webkit-appearance: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .form-select:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: #fff;
+        }
+
+        .form-select.error {
+            border-color: #ff3b30;
+            background: #fff0f0;
+            animation: shake 0.4s ease-in-out;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 22px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 22px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 30px rgba(0, 44, 95, 0.4);
+            margin-top: 15px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 44, 95, 0.5);
+        }
+
+        .btn-submit:active {
+            transform: scale(0.98);
+        }
+
+        .btn-close {
+            width: 44px;
+            height: 44px;
+            background: #f0f2f5;
+            border-radius: 50%;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #666;
+            transition: background 0.2s;
+        }
+
+        .btn-close:hover {
+            background: #e4e6ea;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Semantic SEO Update: h1 for main title, h2 for subtitle -->
+        <h1 class="hero-title">Richard Automotive</h1>
+        <h2 class="hero-subtitle">Inventario Premium & Financiamiento</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Buscar modelo (ej. Tucson)..."
+                aria-label="Buscar modelo de auto" onkeyup="filterCars()">
+
+            <div class="category-filters" id="catFilters">
+                <button class="filter-btn active" onclick="filterByCat('all', this)">Todos</button>
+                <button class="filter-btn" onclick="filterByCat('suv', this)">SUVs</button>
+                <button class="filter-btn" onclick="filterByCat('sedan', this)">Sedanes</button>
+                <button class="filter-btn" onclick="filterByCat('lujo', this)">Lujo</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="inventory-grid" id="grid"></div>
+    </main>
+
+    <div class="sticky-bar">
+        <a href="tel:17873682880" style="background:var(--call)" class="action-btn">📞 Llamar</a>
+        <a href="https://wa.me/17873682880" style="background:var(--whatsapp)" class="action-btn">💬 WhatsApp</a>
+    </div>
+
+    <div id="modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="mTitle" class="modal-title"></h2>
+                <button onclick="closeModal()" class="btn-close" aria-label="Cerrar ventana">✕</button>
+            </div>
+
+            <img id="mImg"
+                style="width:100%;border-radius:24px;margin-bottom:25px;box-shadow:0 10px 25px rgba(0,0,0,0.1)"
+                alt="Imagen del vehículo seleccionado">
+
+            <div class="payment-display">
+                <div class="payment-amount" id="mPayment">$0</div>
+                <div class="payment-label">Pago mensual estimado</div>
+            </div>
+
+            <div class="filter-section">
+                <label class="filter-label">¿Cuánto das de pronto?</label>
+                <div class="pronto-toggles" id="prontoOptions">
+                    <div class="pronto-opt active" data-value="0" role="button" tabindex="0">$0</div>
+                    <div class="pronto-opt" data-value="1500" role="button" tabindex="0">$1.5k</div>
+                    <div class="pronto-opt" data-value="3000" role="button" tabindex="0">$3k</div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <label class="filter-label" for="cName">Personaliza tu oferta:</label>
+                <input type="text" id="cName" class="form-select" placeholder="Tu Nombre Completo *"
+                    style="border-color:#edf2f7">
+
+                <label for="cCredit" class="sr-only"
+                    style="position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Crédito</label>
+                <select id="cCredit" class="form-select">
+                    <option value="" disabled selected>¿Cómo es tu crédito?</option>
+                    <option value="Excelente (700+)">🌟 Excelente (700+)</option>
+                    <option value="Bueno (640-699)">✅ Bueno (640-699)</option>
+                    <option value="Regular (600-639)">⚠️ Regular (600-639)</option>
+                    <option value="Retado (Bajo 600)">🆘 Retado (Bajo 600)</option>
+                </select>
+
+                <label for="cTrade" class="sr-only"
+                    style="position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Trade-in</label>
+                <select id="cTrade" class="form-select">
+                    <option value="" disabled selected>¿Tienes Trade-in?</option>
+                    <option value="No">❌ No tengo auto</option>
+                    <option value="Sí">🚗 Sí, tengo auto</option>
+                </select>
+            </div>
+
+            <button id="sendLead" class="btn-submit">SOLICITAR OFERTA 🚀</button>
+        </div>
+    </div>
+
+    <script>
+        // Registro del Service Worker para la App
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js'); });
+        }
+
+        // Updated Inventory with types for filtering
+        const INVENTORY = [
+            { id: 'tucson', name: 'Hyundai Tucson', price: 31995, img: 'https://i.postimg.cc/ryZDJfy7/IMG-8290.png', badge: 'Bono $2k', type: 'suv' },
+            { id: 'kona', name: 'Hyundai Kona', price: 27995, img: 'https://i.postimg.cc/MKkm5ZGv/IMG-8292.webp', badge: '', type: 'suv' },
+            { id: 'santacruz', name: 'Santa Cruz', price: 34995, img: 'https://i.postimg.cc/prK848L4/IMG-8293.png', badge: 'Liquidación', type: 'suv' },
+            { id: 'venue', name: 'Hyundai Venue', price: 23995, img: 'https://i.postimg.cc/zBgRHWKx/IMG-8296.png', badge: 'Económica', type: 'suv' },
+            { id: 'elantra', name: 'Hyundai Elantra', price: 25995, img: 'https://i.postimg.cc/vT7g3sP9/IMG-8294.png', badge: 'MPG Líder', type: 'sedan' },
+            { id: 'santafe', name: 'Santa Fe 2026', price: 41500, img: 'https://i.postimg.cc/jSxN3DYR/IMG-8295.jpg', badge: 'Nueva Línea', type: 'suv' },
+            { id: 'palisade', name: 'Hyundai Palisade', price: 48995, img: 'https://i.postimg.cc/t4v1rDzw/IMG-8297.png', badge: 'Familiar', type: 'lujo' },
+            { id: 'sonata', name: 'Hyundai Sonata', price: 28995, img: 'https://i.postimg.cc/bJkswPfg/IMG-8298.png', badge: 'Lujo', type: 'sedan' }
+        ];
+
+        let currentCar = null, currentPronto = 0;
+
+        function calc(p, d) { const r = 0.0545 / 12, n = 84; const pr = p - d; return Math.round((pr * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1)); }
+
+        function render(list) {
+            const g = document.getElementById('grid'); g.innerHTML = '';
+
+            if (list.length === 0) {
+                g.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;opacity:0.6">No se encontraron resultados.</div>';
+                return;
+            }
+
+            list.forEach((c, index) => {
+                const card = document.createElement('article'); // Semantic HTML: article for items
+                card.className = 'car-card';
+                card.style.animationDelay = `${index * 50}ms`; // Staggered animation
+                card.onclick = () => openModal(c);
+                card.setAttribute('role', 'button');
+                card.setAttribute('tabindex', '0');
+
+                card.innerHTML = `
+                    ${c.badge ? `<div class="card-badge">${c.badge}</div>` : ''}
+                    <img src="${c.img}" class="card-img" alt="${c.name} en oferta Puerto Rico - Vista Frontal" loading="lazy">
+                    <div class="card-details">
+                        <h3 class="card-name">${c.name}</h3>
+                        <div class="card-price">$${calc(c.price, 0)}<small>/mes</small></div>
+                    </div>`;
+
+                // Keyboard accessibility
+                card.onkeydown = (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openModal(c);
+                    }
+                };
+                g.appendChild(card);
+            });
+        }
+
+        // Filter Logic
+        function filterCars() {
+            const q = document.getElementById('searchInput').value.toLowerCase();
+            // Reset category buttons visually if typing (optional, keeps 'all' implicit context)
+            render(INVENTORY.filter(c => c.name.toLowerCase().includes(q)));
+        }
+
+        function filterByCat(type, btn) {
+            // Visual feedback
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Logic
+            if (type === 'all') {
+                render(INVENTORY);
+            } else {
+                render(INVENTORY.filter(c => c.type === type || (type === 'lujo' && c.price > 40000))); // Dynamic logic for 'lujo'
+            }
+            // Clear search input for clarity
+            document.getElementById('searchInput').value = '';
+        }
+
+        function openModal(c) {
+            currentCar = c;
+            document.getElementById('mTitle').innerText = c.name;
+            const imgEl = document.getElementById('mImg');
+            imgEl.src = c.img;
+            imgEl.alt = `${c.name} - Vista detallada`; // Better alt for modal
+
+            updatePay(0);
+            document.getElementById('modal').classList.add('is-open');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+            // Reset validation states
+            document.getElementById('cName').classList.remove('error');
+
+            if (typeof fbq !== 'undefined') fbq('track', 'ViewContent', { content_name: c.name });
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+
+        function updatePay(v) {
+            currentPronto = v;
+            document.getElementById('mPayment').innerText = `$${calc(currentCar.price, v)}`;
+        }
+
+        // Accessibility for pronto options
+        const prontoOpts = document.querySelectorAll('.pronto-opt');
+        prontoOpts.forEach(opt => {
+            opt.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.target.click();
+                }
+            });
+        });
+
+        document.getElementById('prontoOptions').onclick = (e) => {
+            if (e.target.dataset.value) {
+                document.querySelectorAll('.pronto-opt').forEach(o => o.classList.remove('active'));
+                e.target.classList.add('active'); updatePay(parseInt(e.target.dataset.value));
+            }
+        }
+
+        document.getElementById('sendLead').onclick = () => {
+            const nameInput = document.getElementById('cName');
+            const name = nameInput.value.trim();
+
+            // Validation
+            if (!name) {
+                nameInput.classList.add('error');
+                nameInput.focus();
+                // Remove class after animation to allow reuse
+                setTimeout(() => nameInput.classList.remove('error'), 400);
+                return;
+            }
+
+            const credit = document.getElementById('cCredit').value || "No especificado";
+            const trade = document.getElementById('cTrade').value || "No especificado";
+            const pago = document.getElementById('mPayment').innerText;
+
+            const text = `👋 ¡Saludos Richard! Soy *${name}*.
+🚘 Me interesa el: *${currentCar.name}*
+📊 Mi crédito es: *${credit}*
+🚗 Trade-in: *${trade}*
+💰 Vi el pago estimado de: *${pago}* (con $${currentPronto} pronto).
+
+¿Me puedes confirmar si califico?`;
+
+            if (typeof fbq !== 'undefined') fbq('track', 'Lead', { content_name: currentCar.name });
+            window.open(`https://wa.me/17873682880?text=${encodeURIComponent(text)}`);
+            closeModal();
+        }
+
+        // Esc key to close modal
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('modal').classList.contains('is-open')) {
+                closeModal();
+            }
+        });
+
+        document.getElementById('modal').onclick = (e) => { if (e.target === document.getElementById('modal')) closeModal(); }
+
+        render(INVENTORY);
+    </script>
+</body>
+
+</html>
