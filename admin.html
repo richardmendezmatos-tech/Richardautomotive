@@ -31,21 +31,44 @@
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js"></script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-        body {
-            font-family: 'Inter', sans-serif;
+    <style>
+        :root {
+            --carvana-blue: #00aed9;
+            --deep-navy: #0d2232;
         }
 
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #1e293b;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Glass Morphism from Command Center */
         .glass-panel {
             background: rgba(30, 41, 59, 0.7);
-            backdrop-filter: blur(12px);
+            /* Fallback */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(148, 163, 184, 0.1);
         }
 
-        .glass-panel:hover {
-            border-color: rgba(6, 182, 212, 0.3);
+        .dark .glass-panel {
+            background: rgba(23, 61, 87, 0.5);
+            border: 1px solid rgba(0, 174, 217, 0.2);
+        }
+
+        .hover-kinetic {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .hover-kinetic:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 25px 50px -12px rgba(0, 174, 217, 0.15);
         }
 
         .custom-scroll::-webkit-scrollbar {
