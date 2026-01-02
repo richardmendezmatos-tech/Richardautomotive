@@ -40,36 +40,33 @@ const handleCredentialResponse = async (response) => {
 };
 
 async function verificarSiEsAdmin(user) {
-  if (!user || !user.email) return;
+  if (!user) return;
 
+  // PLAN B: Hardcoded (Acceso instantáneo para ti)
+  const ADMIN_PRIMARIO = "richardmendezmatos@gmail.com";
+
+  if (user.email === ADMIN_PRIMARIO) {
+    console.log("⭐ Acceso Maestro detectado.");
+    activarInterfazAdmin();
+    return; // Ya no necesita esperar a la base de datos
+  }
+
+  // PLAN A: Verificación en Firestore (Para otros admins en el futuro)
   try {
     const docRef = doc(db, "config_segura", "admins");
     const docSnap = await getDoc(docRef);
-
-    if (docSnap.exists()) {
-      const admins = docSnap.data().lista_correos;
-
-      // Verificamos si tu correo está en la lista de Firebase
-      if (admins.includes(user.email)) {
-        console.log("⭐ Bienvenido, Richard. Acceso de Administrador concedido.");
-        mostrarPanelAdmin();
-      } else {
-        console.log("👤 Acceso de cliente estándar.");
-        mostrarVistaCliente();
-      }
+    if (docSnap.exists() && docSnap.data().lista_correos.includes(user.email)) {
+      activarInterfazAdmin();
     } else {
-      // Si el documento en Firebase no existe aún, puedes usar este respaldo
-      if (user.email === "richardmendezmatos@gmail.com") {
-        console.log("⭐ Admin detectado por respaldo de código.");
-        mostrarPanelAdmin();
-      }
+      console.log("👤 Acceso de cliente estándar.");
+      mostrarVistaCliente();
     }
-  } catch (error) {
-    console.error("Error al verificar permisos:", error);
+  } catch (e) {
+    console.error("Error de conexión, pero el Plan B te protege.", e);
   }
 }
 
-function mostrarPanelAdmin() {
+function activarInterfazAdmin() {
   // Muestra el botón de gestión de inventario o el dashboard
   const adminUI = document.getElementById('admin-dashboard');
   if (adminUI) adminUI.style.display = 'block';
