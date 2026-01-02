@@ -715,9 +715,24 @@
         <a href="#" class="nav-logo">
             <span style="color:var(--primary)">Richard</span>Automotive
         </a>
-        <a href="admin.html" id="admin-dashboard" style="display:none; color:white; background:#ff3b30; padding:5px 12px; border-radius:8px; font-weight:700; font-size:0.8rem; text-decoration:none; margin-left:10px;">ADMIN PANEL</a>
         <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌗</button>
     </nav>
+
+    <div id="admin-dashboard" style="display:none; padding: 20px; background: #f4f4f4; border-radius: 10px; max-width: 1200px; margin: 20px auto; color: #333;">
+        <h2>⭐ Panel de Gestión: Richard Automotive</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Inventario Inteligente</h3>
+                <p>Autos procesados por Gemini: <span id="count-autos">...</span></p>
+                <button onclick="abrirEditorInventario()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">Gestionar Autos</button>
+            </div>
+            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Leads de Finanzas</h3>
+                <p>Consultas recientes de clientes.</p>
+                <button onclick="verLeads()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">Ver Mensajes</button>
+            </div>
+        </div>
+    </div>
 
     <header class="hero">
         <h1>Tu próximo auto está aquí.</h1>

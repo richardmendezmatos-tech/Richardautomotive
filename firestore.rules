@@ -14,5 +14,10 @@ service cloud.firestore {
       allow read: if true;
       allow write: if request.auth != null;
     }
+
+    match /config_segura/admins {
+      allow read: if request.auth != null; // Cualquiera logueado puede leer quién es admin
+      allow write: if false; // NADIE puede escribir aquí desde la web, solo tú desde la consola
+    }
   }
 }
