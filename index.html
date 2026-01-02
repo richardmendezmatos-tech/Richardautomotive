@@ -705,6 +705,73 @@
     }
 
     .bar-btn:hover { color: white; }
+
+    /* --- ADMIN UI --- */
+    .admin-dashboard {
+        background: var(--surface);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 20px auto;
+        max-width: 1200px;
+        color: white;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .admin-card {
+        background: rgba(15, 23, 42, 0.6);
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid var(--border);
+        transition: 0.3s;
+    }
+
+    .admin-card:hover {
+        border-color: var(--primary);
+        transform: translateY(-5px);
+    }
+
+    .admin-card h3 { margin-top: 0; color: var(--primary); }
+
+    .btn-admin {
+        background: var(--primary);
+        color: #0f172a;
+        font-weight: 700;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-admin:hover {
+        background: var(--success);
+        box-shadow: 0 0 15px var(--primary);
+    }
+
+    .nav-badge {
+        background: #ff3b30;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.75rem;
+        text-decoration: none;
+        margin-left: 10px;
+        transition: 0.3s;
+        display: none; /* Hidden by default controlled by JS */
+        letter-spacing: 0.5px;
+    }
+
+    .nav-badge:hover {
+        background: #ff453a;
+        box-shadow: 0 0 10px rgba(255, 59, 48, 0.4);
+    }
     </style>
 
 </head>
@@ -715,21 +782,22 @@
         <a href="#" class="nav-logo">
             <span style="color:var(--primary)">Richard</span>Automotive
         </a>
+        <a href="admin.html" id="admin-btn-nav" class="nav-badge">ADMIN PANEL</a>
         <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌗</button>
     </nav>
 
-    <div id="admin-dashboard" style="display:none; padding: 20px; background: #f4f4f4; border-radius: 10px; max-width: 1200px; margin: 20px auto; color: #333;">
-        <h2>⭐ Panel de Gestión: Richard Automotive</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <div id="admin-dashboard" class="admin-dashboard" style="display:none;">
+        <h2>⭐ Panel de Gestión</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            <div class="admin-card">
                 <h3>Inventario Inteligente</h3>
-                <p>Autos procesados por Gemini: <span id="count-autos">...</span></p>
-                <button onclick="abrirEditorInventario()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">Gestionar Autos</button>
+                <p style="color:var(--text-light)">Autos procesados por Gemini: <span id="count-autos" style="color:white; font-weight:bold">...</span></p>
+                <button onclick="abrirEditorInventario()" class="btn-admin">Gestionar Autos</button>
             </div>
-            <div class="card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <div class="admin-card">
                 <h3>Leads de Finanzas</h3>
-                <p>Consultas recientes de clientes.</p>
-                <button onclick="verLeads()" style="padding: 10px 20px; background: var(--primary); color: white; border: none; border-radius: 5px; cursor: pointer;">Ver Mensajes</button>
+                <p style="color:var(--text-light)">Consultas recientes de clientes.</p>
+                <button onclick="verLeads()" class="btn-admin">Ver Mensajes</button>
             </div>
         </div>
     </div>

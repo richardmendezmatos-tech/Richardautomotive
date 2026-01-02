@@ -74,6 +74,10 @@ function mostrarPanelAdmin() {
   const adminUI = document.getElementById('admin-dashboard');
   if (adminUI) adminUI.style.display = 'block';
 
+  // Mostrar el botón del navbar
+  const adminNav = document.getElementById('admin-btn-nav');
+  if (adminNav) adminNav.style.display = 'inline-block';
+
   // Puedes cambiar el título de la página o añadir un badge de Admin
   document.title = "Richard Automotive | Admin Mode";
 }
