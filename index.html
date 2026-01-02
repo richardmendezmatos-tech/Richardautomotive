@@ -22,6 +22,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Google Sign-In -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
     <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js"></script>
@@ -602,7 +605,6 @@
                 box-shadow: 0 0 0 0 rgba(0, 174, 217, 0);
             }
         }
-    </style>
 
     /* --- CALCULATOR --- */
     .m-calc-grid {
@@ -713,6 +715,7 @@
         <a href="#" class="nav-logo">
             <span style="color:var(--primary)">Richard</span>Automotive
         </a>
+        <a href="admin.html" id="admin-dashboard" style="display:none; color:white; background:#ff3b30; padding:5px 12px; border-radius:8px; font-weight:700; font-size:0.8rem; text-decoration:none; margin-left:10px;">ADMIN PANEL</a>
         <button class="theme-toggle" onclick="document.body.classList.toggle('dark-mode')">🌗</button>
     </nav>
 
@@ -1029,7 +1032,11 @@
                 .then(reg => console.log('Service Worker registrado', reg.scope))
                 .catch(err => console.log('Service Worker falló', err));
         }
-    </shacript >
-</body >
+    </script>
+    <script type="module">
+        import { initRichardAuth } from "./auth.js";
+        initRichardAuth();
+    </script>
+</body>
 
 </html >
